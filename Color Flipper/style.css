@@ -73,6 +73,8 @@ h1 {
 
 p {
   margin-left: 1rem;
+  font-weight: bold;
+  color: rgb(73, 166, 233);
 }
 
 div.color h1, div.color p {
