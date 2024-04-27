@@ -1,15 +1,44 @@
 let button = document.querySelector("button");
 let cor = document.querySelector("p");
+let color = document.querySelector(".main");
 
-function changeColor () {
+// RGB COLOR
+function rgbColor () {
   let random1 = Math.floor(Math.random() * 256)
   let random2 = Math.floor(Math.random() * 256)
   let random3 = Math.floor(Math.random() * 256)
 
-  let color = document.querySelector(".main");
-  
   color.style.backgroundColor = `rgb(${random1}, ${random2}, ${random3})`;
   cor.innerText = `RGB(${random1}, ${random2}, ${random3})`;
 }
 
-button.addEventListener("click", changeColor);
+// HEX COLOR
+
+let hex = ["A", "B", "C", "D", "E", "F", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+function hexColor() {
+  let random1 = Math.floor(Math.random() * 16)
+  let random2 = Math.floor(Math.random() * 16)
+  let random3 = Math.floor(Math.random() * 16)
+  let random4 = Math.floor(Math.random() * 16)
+  let random5 = Math.floor(Math.random() * 16)
+  let random6 = Math.floor(Math.random() * 16)
+
+  color.style.backgroundColor = `#${hex[random1] + hex[random2] + hex[random3] + hex[random4] + hex[random5] + hex[random6]}`;
+
+  cor.innerText = `#${hex[random1] + hex[random2] + hex[random3] + hex[random4] + hex[random5] + hex[random6]}`;
+}
+
+// COLOR NAME
+
+let colors = ["Yellow", "Green", "Red", "Orange", "Blue", "Purple", "Pink", "Brown"];
+
+function colorName () {
+  let random = Math.floor(Math.random() * 8);
+  
+  console.log(random);
+  color.style.backgroundColor = colors[random];
+  cor.innerText = colors[random];
+}
+
+button.addEventListener("click", colorName);

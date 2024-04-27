@@ -14,6 +14,7 @@ function changeColor() {
   let color = document.querySelector(".main");
 
   color.style.backgroundColor = `#${hex[random1] + hex[random2] + hex[random3] + hex[random4] + hex[random5] + hex[random6]}`;
+  
   cor.innerText = `#${hex[random1] + hex[random2] + hex[random3] + hex[random4] + hex[random5] + hex[random6]}`;
 }
 
