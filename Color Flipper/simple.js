@@ -41,4 +41,23 @@ function colorName () {
   cor.innerText = colors[random];
 }
 
-button.addEventListener("click", colorName);
+// Random Color
+
+function randomColor() {
+  switch (Math.floor(Math.random() * 3)) {
+    case 0:
+      rgbColor();
+      break;
+    case 1:
+      hexColor()
+      break;
+    case 2:
+      colorName();
+      break;
+    default:
+      alert("Something goes wrong!");
+      break;
+  };
+}
+
+button.addEventListener("click", randomColor);
