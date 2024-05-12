@@ -64,6 +64,10 @@ nav > ul {
   gap: 2.5rem
 }
 
+figure {
+  display: none;
+}
+
 /* BODY */
 
 .main {
@@ -134,5 +138,28 @@ button:hover {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  .main {
+    height: 100vh;
+  }
+
+  figure {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    height: 3rem;
+    width: 3rem;
+    right: 3rem;
+    top: 2rem;
+    cursor: pointer;
+  }
+
+  .active h1 {
+    color: red;
   }
 }

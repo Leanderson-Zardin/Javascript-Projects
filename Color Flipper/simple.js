@@ -61,3 +61,11 @@ function randomColor() {
 }
 
 button.addEventListener("click", randomColor);
+
+// TOGGLE - NAVBAR
+
+let toggleButton = document.querySelector("img");
+
+toggleButton.addEventListener("click", () => {
+  toggleButton.classList.toggle("active");
+})
