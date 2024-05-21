@@ -36,5 +36,5 @@ toggleButton.addEventListener("click", () => {
   } else {
     toggleButton.src = "assets/barras-paralelas.svg";
   }
-  toggleImage = !toggleImage
+  toggleImage = !toggleImage;
 })

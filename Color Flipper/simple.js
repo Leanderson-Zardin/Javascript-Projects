@@ -66,17 +66,18 @@ button.addEventListener("click", randomColor);
 
 let toggleButton = document.querySelector("img");
 let navbar = document.querySelector("nav");
-let header = document.querySelector(".main");
+let body = document.querySelector(".main");
 let toggleImage = true;
 
 toggleButton.addEventListener("click", () => {
   navbar.classList.toggle("active");
-  header.classList.toggle("active");
-  
+  body.classList.toggle("active");
+
   if (toggleImage) {
     toggleButton.src = "assets/barras-cruzadas.svg";
+    
   } else {
     toggleButton.src = "assets/barras-paralelas.svg";
   }
-  toggleImage = !toggleImage
+  toggleImage = !toggleImage;
 })
